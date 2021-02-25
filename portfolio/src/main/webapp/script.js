@@ -17,8 +17,8 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Im a scorpio', 'calling the mechanic and giving birth arent that diffrent if you thing abt it',
-      , '離婚のローディング音楽！', 'Free Palestine','Free Tay K'];
+      [' I\'m a scorpio ', 'Calling the mechanic and giving birth arent that diffrent if you think about it',
+       '離婚のローディング音楽！', 'Free Palestine','Free Tay K'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
