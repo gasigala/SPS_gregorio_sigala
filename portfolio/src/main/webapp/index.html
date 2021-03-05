@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="new_script.js"></script>
   </head>
   <body>
     <div id="content">
@@ -25,7 +26,12 @@
           doesn't feel nice then no one is going to use it. 
       </p>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click<a href= "/week2"> here</a> to see a servelet in action</p>
+      <p>Click this button to see an asychonos java script in action</p>
+      <button onclick="getHelloWorld();">
+          Get Message
+      </button>
+
+      <p id= "message-container"></p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Click me!</button>
       <div id="greeting-container"></div>

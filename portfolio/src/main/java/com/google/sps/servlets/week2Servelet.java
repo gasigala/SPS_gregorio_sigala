@@ -15,7 +15,7 @@ public class week2Servelet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
     response.setContentType("text/html;");
-    response.getWriter().println("<h1>This is a servelet example:</h1>");
-    response.getWriter().println("<p>Hello world!</p>");
+    response.getWriter().println("This is a servelet example:");
+    response.getWriter().println("Hello world!");
   }
 }
