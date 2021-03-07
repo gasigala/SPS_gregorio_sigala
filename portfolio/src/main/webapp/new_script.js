@@ -1,8 +1,8 @@
 //will return a hardcoded messafe
-async function getHelloWorld() {
-  const responseFromServer = await fetch('/week2');// week 2 is the servelet made earlier
-  const textFromResponse = await responseFromServer.text();
+async function random_greeting() {
+  const responseFromServer = await fetch('/week2');// week 2 is the week2Servelet.java
+  const textFromResponse = await responseFromServer.json();
 
   const messageContainer = document.getElementById('message-container');
-  messageContainer.innerText = textFromResponse;
+  messageContainer.innerText = textFromResponse[Math.floor(Math.random() * 3)];
 }

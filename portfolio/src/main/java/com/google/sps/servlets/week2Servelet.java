@@ -23,13 +23,15 @@ public class week2Servelet extends HttpServlet {
     randomMessage.add("Stay tuned for what to come");
 
     String json = convertToJsonUsingGson(randomMessage);
+    //not exactly sure 
     response.setContentType("application/json;");
     response.getWriter().println(json);
     
   }
-    private String convertToJsonUsingGson(ArrayList<String> serverStats) {
+    private String convertToJsonUsingGson(ArrayList<String> randomMessage) {
     Gson gson = new Gson();
-    String json = gson.toJson(serverStats);
+    String json = gson.toJson(randomMessage);
+    System.out.println(json);
     return json;
   }
 }
