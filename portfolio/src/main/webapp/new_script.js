@@ -1,4 +1,4 @@
-//will return a hardcoded messafe
+//will return a hardcoded message from json
 async function random_greeting() {
   const responseFromServer = await fetch('/week2');// week 2 is the week2Servelet.java
   const textFromResponse = await responseFromServer.json();
