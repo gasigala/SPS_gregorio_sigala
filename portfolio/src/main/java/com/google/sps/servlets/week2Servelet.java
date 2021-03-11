@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 /** Servlet that returns HTML that contains the page view count. */
 @WebServlet("/week2")
 public class week2Servelet extends HttpServlet {
-
-
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     ArrayList<String> randomMessage= new ArrayList<String>();
@@ -28,10 +26,9 @@ public class week2Servelet extends HttpServlet {
     response.getWriter().println(json);
     
   }
-    private String convertToJsonUsingGson(ArrayList<String> randomMessage) {
+    private static String convertToJsonUsingGson(ArrayList<String> randomMessage) {
     Gson gson = new Gson();
     String json = gson.toJson(randomMessage);
-    System.out.println(json);
     return json;
   }
 }
