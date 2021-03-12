@@ -4,52 +4,233 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="new_script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+
   </head>
   <body>
-    <div id="content">
-      <h1>Gregorio Sigala's Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>My name is Gregorio Sigala, I currently attend The University of Texas at El Paso. My intrest's include:  
-          playing tennis, listening to music, and coding of course. Ever since I was a child I have a been a 
-          huge advocate for offloading work onto someone else. Computer science provides all the ability to tell
-          an entity what to do without the guilt. Through computers we can make our lives substancially easier, and I 
-          hope to accomplish this with the work I do now and in the future. 
-      </p>
-      <p>Software product sprint is the first major project that I've worked on however, you can find me on
-           <a href="https://www.linkedin.com/in/gregorio-sigala-6305a81a0/">linkedin</a> 
-          and <a href="https://github.com/gasigala/">github</a>.
-           Recently I've become very intrested in the human computer interaction aspect of computer science
-          and the psychology behind it. Usually when a new feature is introduced to a prodcut the responce is very binary
-          either "I love it" or "this just ruined the app for me." Regardless if the feature is usefull or not, if it 
-          doesn't feel nice then no one is going to use it. 
-      </p>
+      <header>
+          <div class = "menu-toggler">
+              <div class= "bar half start"></div>
+              <div class= "bar"></div>
+              <div class= "bar half end"></div>
+          </div>
+          <nav class="top-nav">
+              <ul class= "nav-list">
+                <li>
+                    <a href="index.html" class = "nav-link">Home</a>
+                </li>
+                 <li>
+                    <a href="#about" class = "nav-link">About</a>
+                </li>
+                 <li>
+                    <a href="#services" class = "nav-link">Services</a>
+                </li>
+                 <li>
+                    <a href="#portfolio" class = "nav-link">Portfolio</a>
+                </li>
+                 <li>
+                    <a href="#experience" class = "nav-link">Experience</a>
+                </li>
+                 <li>
+                    <a href="#contact" class = "nav-link">Contact</a>
+                </li>
+              </ul>
+          </nav>
+          <div class = "landing-text">
+              <h1> Gregorio Sigala</h1>
+              <h6>Computer Science Student and Idealist</h6> 
+          </div>
+      </header>
 
-      <p id= "message-container"></p>
-      <button type="button" onclick="random_greeting()">Click for a random message using JSON</button>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Click me!</button>
-      <div id="greeting-container"></div>
+      <section class= "about" id= "about">
+          <div class ="container">
+              <div class= "profile-img">
+                  <img src= "images/me.jpeg" alt= "dashing young man">
+              </div>
+              <div class= "about-details">
+                  <div class= "about-heading">
+                     <h1>About</h1>
+                     <h6>Myself</h6>
+                  </div>
+                  <p>
+                      My name is Gregorio Sigala, and I currently attend The University of Texas at El Paso. My intrests include  
+                      playing tennis, listening to music, and coding, of course. Ever since I was a child, I have a been a 
+                      huge advocate for offloading work onto somebody else. Computer science provides the ability to tell
+                      an entity what to do without the guilt. Through computers we can make our lives substancially easier, and I 
+                      hope to accomplish this with the work I do now and in the future. 
+                  </p>
+                  <div class= "social-media">
+                    <ul class= "nav-list">
+                      <li>
+                          <a href= "https://twitter.com/omenrobot12" class= "icon-link">
+                            <i class= "fa fa-twitter-square"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href= "https://www.linkedin.com/in/gregorio-sigala-6305a81a0/" class= "icon-link">
+                            <i class= "fa fa-linkedin-square"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href= "https://github.com/gasigala" class= "icon-link">
+                            <i class= "fa fa-github-square"></i>
+                          </a>
+                      </li>
+                    </ul>
+                 </div>
+              </div>
 
-      <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
-        <br/>
-        <input type="submit" />
-      </form>
-
-    </div>
-    <div class= "row">
-        <div class= "column">
-            <img src = "images/me.jpeg"  alt= "a good time off by a lake" style= "width: 100%" />
-        </div>
-        <div class= "column">
-            <img src = "images/migos.jpg" alt= "Pre-covid gathering of some sort" style= "width: 100%" />
-        </div>
-        <div class= "column">
-            <img src = "images/switch.jpg" alt="Leaning tower of piza circa 2019 " style= "width: 100%" />
-        </div>
-    </div>
+          </div>
+      </section>
+      <section class= "services" id= "services">
+          <div class= "container"> 
+              <div class= "section-heading">
+                  <h1>Services</h1>
+                  <h6>What I can do for you</h6>
+              </div>
+              <div class= "my-skills">
+                  <div class= "skill">
+                      <div class= "icon-container">
+                          <i class= "fa fa-desktop"></i>
+                      </div>
+                      <h1>Web Design</h1>
+                      <p>Please do not ask me for help on this I made this whole thing off a
+                          YouTube tutorial. Any suggestions welcome in the suggestion box however.
+                      </p>
+                  </div>
+                  <div class= "skill">
+                      <div class= "icon-container">
+                          <i class= "fa fa-code"></i>
+                      </div>
+                      <h1>General Development</h1>
+                      <p>I am proficient in Java and Python and knowledgeable in C. Given time I also expect to be fairly knowledgeable in 
+                          HTML and CSS. For the time being.
+                      </p>
+                  </div>
+                  <div class= "skill">
+                      <div class= "icon-container">
+                          <i class= "fa fa-spotify"></i>
+                      </div>
+                      <h1>Musical Enlightenment</h1>
+                      <p>If you ever want to talk about music my door(email) is always open. I can also rate 
+                          your music taste on my very arbitrary scale. Please refrain from sending me country,
+                          thank you.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class= "portfolio" id= "portfolio">
+          <div class= "container"> 
+              <div class= "section-heading">
+                  <h1>Portfolio</h1>
+                  <h6>View some of my recent work</h6>
+              </div>
+              <div class= "porfolio-item">
+                  <div class= "portfolio-img has-margin-right">
+                      <img src= "images/banner_hacktober.jpg" alt="spooky pumpkin in a linux enviorment">
+                  </div>
+                  <div class= "portfolio-description">
+                      <h6>Capture the Flag</h6>
+                      <h1>Hacktober 2020</h1>
+                      <p>
+                          Solved various puzzles in a linux based enviorment including but not limited
+                          to cryptography, steganography, and programming. 
+                      </p>
+                      <a href="https://blog.cyberhacktics.com/hacktober-2020/" class= "cta">View Details</a>
+                  </div>
+              </div>            
+              <div class= "porfolio-item">
+                  <div class= "portfolio-img">
+                      <img src= "images/download.jpg" alt="a good time">
+                  </div>  
+                  <div class= "portfolio-description has-margin-right">
+                      <h6>More to come</h6>
+                      <h1>Today I bring you a sub-par website, tommorow? Who knows.</h1>
+                      <p></p>
+                  </div>
+              </div>
+              <!--minimum viable product section-->
+              <div class= "porfolio-item">
+                  <div class= "portfolio-description has-margin-right">
+                      <div class="button">
+                           <button class= "json-button" onclick="random_greeting()">Click for a random message using JSON</button>
+                           <p id= "message-container"></p>
+                           <button class= "regular-button" onclick="addRandomGreeting()">Click me for a hardcoded message!</button>
+                           <p id="greeting-container"></p>
+                        </div>
+                        <!--upload images button-->
+                        <div class = "image-handler" >
+                            <form action="/upload" method="POST" enctype="multipart/form-data">
+                                <input type="file" name="image">
+                                <button>Submit</button>
+                            </form>
+                            <p><a href="/list-images">Click here to see all of the uploaded images!</a></p>
+                        </div>
+                  </div>
+              </div>
+           </div>
+      </section>
+    <section class= "experience" id= "experience">
+          <div class= "container"> 
+              <div class= "section-heading">
+                  <h1>Experience</h1>
+                  <h6>Past and Current endeavors</h6>
+              </div>
+          <div class= "timeline">
+              <ul>
+                  <li class= "date" data-date= "2019-Present">
+                      <h1>University of Texas at El Paso</h1>
+                      <p>
+                      </p>
+                  </li>
+                  <li class= "date" data-date= "2000-2019">
+                      <h1>Conception/Formative Years</h1>
+                      <p>Not much to say here, will probably define how I am as a person for
+                          the rest of my life. 
+                      </p>
+                  </li>
+              </ul>
+          </div>
+          </div>
+    </section>
+ <section class= "contact" id= "contact">
+          <div class= "container"> 
+              <div class= "section-heading">
+                  <h1>Contact</h1>
+                  <h6>Lets work together!</h6>
+              </div>
+              <!-- form submission minnimum viable product-->
+              <!-- TODO: keep track of other inputs  -->
+              <form action ="/form-handler" method="POST">
+                  <label for="name">Name</label>
+                  <input type= "text" id= "name" name= "name" placeholder="Enter your Name..." required>
+                  <label for="email">Email</label>
+                  <input type= "email" id= "email" name= "email" placeholder="Enter your email..." required>
+                  <label for="service">Services:</label>
+                  <select name= "services" id= "service">
+                    <option value=""> Development</option>
+                    <option value=""> Musical Enlightenment</option>
+                    <option value=""> Suggestions</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea name="text-input" id= "subject" cols="10" rows="10"></textarea>
+                  <input type="submit" value="Submit">
+              </form>
+          </div>
+  </section>
+  <footer class= "copyright">
+      <div class ="up" id= "up">
+          <i class="fa fa-chevron-circle-up"></i>
+      </div>
+      <p>&copy; 2021 Gregorio Sigala</p>
+  </footer> 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>     
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script src="new_script.js"></script>
   </body>
 </html>

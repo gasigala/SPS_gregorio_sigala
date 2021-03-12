@@ -15,6 +15,18 @@
 /**
  * Adds a random greeting to the page.
  */
+$(document).ready(function () {
+	$('.menu-toggler').on('click', function () {
+		$(this).toggleClass('open');
+		$('.top-nav').toggleClass('open');
+    });
+});
+
+$('.nav-link').on('click', function() {
+        $('.menu-toggler').removeClass('open');
+        $('.top-nav').removeClass('open');
+    });
+
 function addRandomGreeting() {
   const greetings =
       [' I\'m a scorpio ', 'Calling the mechanic and giving birth arent that diffrent if you think about it',
